@@ -1,0 +1,17 @@
+{
+  "name": "language-aruba",
+  "version": "1.0.0",
+  "description": "Aruba 2xx/3xx IAP and 25xx/29xx switch language support",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmanske/language-aruba.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nmanske/language-aruba/issues"
+  },
+  "license": "MIT"
+}

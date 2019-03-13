@@ -1,0 +1,55 @@
+'scopeName': 'source.aruba'
+'name': 'Aruba'
+'fileTypes': ['aru', 'txt', 'j2']
+
+'patterns': [
+    {
+        'match': '"\\S*"'
+        'name': 'quotes.string.aruba'
+    }
+    {
+        'match': '([^A-Za-z#\\(\\)]+[0-9])+|(\d(?=%))|(\d\d(?=%))'
+        'name': 'integer.numeric.aruba'
+    }
+    {
+        'match': '(%\\w*%)|(%if .*)'
+        #'match': '(%.+%)(^\d(?=%))(^\d\d(?=%))'
+        #'match': '(%\D+?%\n)|%(.+?(?=\d))|%'
+        'name': 'var.language.aruba'
+    }
+    {
+        'match': '({%\\w*%})|({% if .*)|({% for .*)|({% endfor %})|({% endif %})|({% else %})|({# .*})'
+        'name': 'jinja.language.aruba'
+    }
+    {
+        'match': '\\b(reload|conf|configuration|version|virtual-controller-country|dynamic-radius-proxy|virtual-controller-key|name|terminal-access| per-ap-settings|syslocation|clock|rf-band|allow-new-aps|allowed-ap|arm|syslog-level|mgmt-user|mgmt-auth-server-local-backup|mgmt-accounting|mgmt-auth-server|snmp-server|wlan|auth-survivability|blacklist-time|auth-failure-blacklist-time|ids|wired-port-profile|enet0-port-profile|enet1-port-profile|enet2-port-profile|enet3-port-profile|cellular-uplink-profile|console|uplink|airgroup|airgroupservice|telnet|location|controller|ip|netservice|netexthdr|time-range|deny-inter-user-bridging|deny-local-routing|restrict-corp-access|restricted-mgmt-access|hotspot|vpn|virtual-controller-ip|virtual-controller-vlan|syslog-server|organization|ntp-server|ams-ip|ams-key|ams-identity|ale-server|routing-profile|rf|internal-domains|extended-ssid|dpi|inbound-firewall|calea|firewall|ble|cluster-security)\\s'
+        'name': 'syntax1.language.variable'
+    }
+    {
+        'match': '\\b(standalone|hs-profile|comeback-mode|terminal|timezone|all|route|80mhz-support|dot11g-radio-profile|dot11a-radio-profile|dhcp|tunnel-profile|backup|ikepsk|xauth|group-id|aggressive-mode|warn|pool|community|primary|fast-failover|masterip|webcategory|access-rule|weekday|weekend|external|profile|ssid-profile|rfc3576|cppm-rfc3576-port|cache-time-out|4g-usb-type|usb-type|usb-dev|usb-tty|usb-modeswitch|uplink-priority|bandwidth-limit|dot11g-radio-disable|g-channel| g-external-antenna|dot11a-radio-disable|a-channel|a-external-antenna|enet0-bridging|iap-master|zonename|usb-port-disable|pin-enable|mode|advertised-route)\\s'
+        'name': 'syntax2.language.variable'
+    }
+    {
+        'match':          '\\b(wide-bands|acctport|key|radius-accounting|https|infrastructure-detection-level|client-detection-level|client-protection-level|g-min-tx-rate|a-min-tx-rate|eap-peap|non-eap-inner-auth|mschapv2|utf8|business|research-and-dev-facility|eng|wired-containment-ap-adj-mac|encapsulation|gre|drp-ip|nas-ip|nas-id|gateway|min-tx-power|gas-comeback-delay|query-response-length-limit|access-network-type|addtl-roam-cons-ois|p2p-dev-mgmt|p2p-cross-connect|max-tx-power|band-steering-mode|
+        air-time-fairness-mode|client-aware|scanning|rule|command|tacacs-server|timeout|hide-ssid|a-channels|g-channels|enable|enabled|index|type|essid|opmode|wpa-passphrase|max-authentication-failures|vlan|auth-server|captive-portal|hide-sssid|dtim-period|inactivity-timeout|broadcast-filter|dmo-channel-utilization-threshold|local-probe-req-thresh|max-clients-threshold|server-address|server-group|port-access|url|auth-text|auto-whitelist-disable|switchport-mode|allowed-vlan|native-vlan
+        |no|access-rule-name|swarm-mode|ip-address|hostname|uplink-vlan|speed|duplex|preemption|enforce|failover-internet-pkt-lost-cnt|failover-internet-pkt-send-freq|failover-vpn-timeout|spectrum-monitor|dot11h|csa-count|subnet|subnet-mask|dns-server|lease-time|description|wifi0-mode|wifi1-mode|contains|radius-accounting-mode|radius-interim-accounting-interval|background-color|banner-color|banner-text|terms-of-use|use-policy|server-fail-through|server-type|server-vlan|mac-based|mac-group|
+        radius-server|infrastructure-detection-level|infrastructure-protection-level|set-role|hotspot-profile|monday|tuesday|wednesday|thursday|friday|saturday|sunday|upstream|downstream|ip-range|client-count|out-of-service|password|username|failover-beaconing|DynamicConsole|PersistentConsole)\\s'
+        'name': 'syntax3.language.variable'
+    }
+    {
+        'match': '\\b(5ghz|anqp|h2qp|prefer|fair|ap-debug|network|security|pre-tagged|system|user|user-name|wireless|any|employee|opensystem|InternalServer|disable|external-captive-portal|localhost|alias|periodic|to)\\s'
+        'name': 'syntax4.language.variable'
+    }
+    {
+        'match': '\\b(match|permit|trunk|shutdown|auto|primary-uplink-down|equals|contains|full|half|mem|udp|tcp|apply|deny)\\s'
+        'name': 'syntax5.language.variable'
+    }
+    {
+        'match': '\\b(nai|op|advertisement|venue|roam|3gpp|domain|src)\\s'
+        'name': 'syntax6.language.variable'
+    }
+    {
+        'match': '\\b(exit|none|poe|dot1x|write|commit|tunnel)\\s'
+        'name': 'syntax7.language.variable'
+    }
+]
