@@ -1,6 +1,6 @@
 {
-  "name": "language-aruba",
-  "version": "1.0.0",
+  "name": "language-aruba-att",
+  "version": "1.0.1",
   "description": "Aruba 2xx/3xx IAP and 25xx/29xx switch language support",
   "engines": {
     "atom": "*"
@@ -8,7 +8,7 @@
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/nmanske/language-aruba.git"
+    "url": "https://github.com/snickers6910/Rodney-Language-Aruba.git"
   },
   "bugs": {
     "url": "https://github.com/nmanske/language-aruba/issues"
