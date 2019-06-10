@@ -1,7 +1,7 @@
 {
   "name": "language-aruba-att",
   "version": "1.1.0",
-  "description": "Aruba 2xx/3xx IAP and 25xx/29xx switch language support",
+  "description": "Aruba IAP and Aruba Switch language support",
   "engines": {
     "atom": "*"
   },
