@@ -18,7 +18,7 @@
         'name': 'var.language.aruba'
     }
     {
-        'match': '({%\\w*%})|({% if .*)|({% for .*)|({% endfor %})|({% endif %})|({% else %})|({# .*})'
+        'match': '({%\\w*%})|({% if .*)|({% for .*)|({% endfor %})|({% endif %})|({% else %})|({# .*}|\\{\\{\\w*\\}\\})'
         'name': 'jinja.language.aruba'
     }
     {
